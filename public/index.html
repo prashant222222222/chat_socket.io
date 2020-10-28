@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color:yellow;
+            
+        }
+h1{
+    color:blue;
+}
+
+ul{
+    color:green;
+}
+     
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- io object gets available when we include above file , check on console -->
+    <script defer src="script.js"></script>
+    <!-- defer means script.js will run when the dom will get loaded -->
+  
+</head>
+<body>
+    <!-- <h1>socket.io</h1>
+    <button id="boom">vikrant gaand maaru</button> -->
+
+    <h1>CHATO</h1>
+    <!-- <input id="inpMsg">
+    <button id="btnSend">SEND</button>
+    <ul id="ulMsgList"></ul> -->
+<br>
+<div id="loginBox"> 
+<input id="inpUsername" placeholder='username'>
+<input id="inpPass" placeholder='password' type='password'>
+<button id="btnStart">LOGIN</button>
+</div>
+
+<div id="chatBox">  
+    <input id="inpToUser" placeholder="Send to (default everyone)">
+    <input id="inpNewMsg" placeholder="New Message">
+    <button id="btnSendMsg">SEND</button>
+    <ul id="ulMsgs"></ul>
+</div>
+
+</body>
+</html>
+
+
